@@ -6,7 +6,7 @@
   <title>Termos do Sistema de Neurodiversidade</title>
   <link rel="stylesheet" href="/css/termos.css">
 </head>
-<body>
+<body class="focus-mode">
   <div class="container">
     <h1>Termos de Uso – Sistema de Neurodiversidade</h1>
     <p>Bem-vinde ao nosso site de relacionamento para neurodivergentes! Antes de acessar ou compartilhar este sistema pelas redes sociais, leia com atenção nossos termos:</p>
@@ -34,8 +34,17 @@
       <li>Ao compartilhar o site em redes sociais, ajude a promover um ambiente acolhedor e seguro.</li>
       <li>Qualquer violação dos termos pode gerar advertência, suspensão ou banimento da plataforma.</li>
     </ul>
- 
+    <button class="btn-voltar" onclick="voltarPagina()">Voltar ao site</button>
   </div>
+  <script>
+    function voltarPagina() {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = '/';
+      }
+    }
+  </script>
   <script src="/css/termos.js"></script>
 </body>
 </html>
