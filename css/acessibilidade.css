@@ -8,6 +8,7 @@ body {
     line-height: 1.5;
   }
   
+  /* Estrutura geral */
   header, main, footer {
     margin: 20px auto;
     max-width: 720px;
@@ -18,7 +19,7 @@ body {
   }
   
   header {
-    background: #6aa84f; /* verde principal */
+    background: #6aa84f;
     color: #fff;
     text-align: center;
   }
@@ -29,7 +30,7 @@ body {
   }
   
   h2 {
-    color: #4d7b38; /* tom mais escuro do verde */
+    color: #4d7b38;
     margin-bottom: 0.5em;
   }
   
@@ -37,6 +38,7 @@ body {
     padding-left: 1.5em;
   }
   
+  /* Botões padrão */
   button, a {
     font-size: 1.1em;
     border-radius: 6px;
@@ -48,27 +50,50 @@ body {
     text-decoration: none;
     margin-top: 1em;
     display: inline-block;
-    transition: background 0.25s;
+    transition: background 0.25s, transform 0.15s;
   }
   
   button:hover, a:hover {
-    background: #6aa84f; /* hover verde */
+    background: #6aa84f;
+    transform: scale(1.03);
   }
   
+  /* 🔆 Modo Alto Contraste Verde */
   .high-contrast {
-    background: #151515 !important;
-    color: #FFD700 !important;
+    background: #1a1f1a !important;
+    color: #c7f5c1 !important;
   }
   
   .high-contrast header {
-    background: #FFD700 !important;
-    color: #151515 !important;
+    background: #6aa84f !important;
+    color: #fff !important;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+  
+  .high-contrast main, 
+  .high-contrast footer {
+    background: #2c332c !important;
+    box-shadow: 0 0 12px rgba(106, 168, 79, 0.3);
   }
   
   .high-contrast h2 {
-    color: #FFD700 !important;
+    color: #8ce37c !important;
   }
   
+  /* Botões no modo contraste */
+  .high-contrast button, 
+  .high-contrast a {
+    background-color: #6aa84f !important;
+    color: #fff !important;
+  }
+  
+  .high-contrast button:hover, 
+  .high-contrast a:hover {
+    background-color: #8de68f !important;
+    color: #000 !important;
+  }
+  
+  /* Acessibilidade */
   .skip-link {
     position: absolute;
     left: -1000px;
@@ -87,5 +112,6 @@ body {
     height: auto;
     padding: 8px 14px;
     z-index: 10000;
+    border-radius: 6px;
   }
   
