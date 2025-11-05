@@ -1,1 +1,61 @@
-Entrou
+
+
+home.html:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Conexão Neurodiversa</title>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">🧠 Conexão ND</div>
+    <div class="user-profile">
+      <img src="placeholder-profile.png" alt="Foto do usuário" class="profile-pic">
+      <span class="user-name">Rodrigo</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="news-section">
+      <h2>Notícias sobre Neurodiversidade</h2>
+      <ul class="news-links">
+        <li><a href="#">Inclusão nas empresas</a></li>
+        <li><a href="#">Avanços na neurociência</a></li>
+        <li><a href="#">Transtornos do espectro autista</a></li>
+        <li><a href="#">Histórias inspiradoras</a></li>
+      </ul>
+    </section>
+
+    <section class="search-section">
+      <h3>Buscar outros usuários</h3>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Pesquisar usuários...">
+        <button id="search-btn" title="Buscar"><span class="search-icon">&#x1F50D;</span></button>
+      </div>
+      <div id="search-results"></div>
+    </section>
+
+    <section class="suggestions-section">
+      <h3>Sugestões de amizade com base nos seus interesses</h3>
+      <div id="suggestions-container" class="suggestions-container"></div>
+    </section>
+  </main>
+
+  <button class="fab" title="Abrir Chat">💬</button>
+
+  <footer>
+    <p>&copy; 2025 Conexão Neurodiversa. Todos os direitos reservados.</p>
+    <nav>
+      <a href="#">Termos de Serviço</a> |
+      <a href="#">Política de Privacidade</a>
+    </nav>
+  </footer>
+
+  <script src="/js/home.js"></script>
+</body>
+</html>
+
