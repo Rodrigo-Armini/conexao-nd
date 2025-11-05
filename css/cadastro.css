@@ -34,7 +34,7 @@ input {
     margin-bottom: 10px;
     width: 100%;
     padding: 12px;
-    background: var(--verde);
+    background: #A9DFBF;          /* mesma cor do Voltar */
     border: none;
     font-weight: bold;
     border-radius: 8px;
@@ -42,7 +42,7 @@ input {
 }
 
 .btn-cadastrar:hover {
-    background: var(--verde-hover);
+    background: #7DCEA0;         /* mesma cor do Voltar hover */
 }
 
 

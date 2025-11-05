@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f7f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #6aa84f;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 700px;
+    background: white;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 18px rgba(80, 110, 80, 0.09);
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.25rem;
+    margin: 0 0 1rem;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    font-size: 1.35rem;
+    color: #6aa84f;
+  }
+  
+  ul {
+    margin-left: 2rem;
+  }
+  
+  .accordion {
+    margin: 1rem 0;
+  }
+  
+  .accordion-header {
+    cursor: pointer;
+    padding: 1rem;
+    background: #ecf7ec;
+    border-radius: 7px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  
+  .accordion-header:hover {
+    background: #d8f0d8;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+    background: #fff;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .accordion-content.open {
+    max-height: 400px;
+    padding: 1rem;
+  }
+  
+  .btn-voltar {
+    display: inline-block;
+    background: #6aa84f;
+    color: white;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    transition: background 0.2s;
+  }
+  
+  .btn-voltar:hover {
+    background: #5c9546;
+  }
+  
+  @media (max-width: 800px) {
+    main {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
+  
